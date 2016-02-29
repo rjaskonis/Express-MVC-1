@@ -7,7 +7,7 @@ var env      = process.env.NODE_ENV || "development";
 
 db.Sequelize = require('sequelize');
 //db.sequelize = new db.Sequelize('dev1', 'sa', 'Uxrj12', { host: "172.16.100.102", dialect: "mssql", port: "1433",  timezone: "-02:00" });
-db.sequelize = new db.Sequelize('dev1', 'sa', 'Aqua12!', { host: "aquanalyze.no-ip.biz", dialect: "mssql", port: "1433",  timezone: "-02:00" });
+db.sequelize = new db.Sequelize('dev1', 'sa', '***', { host: "127.0.0.1", dialect: "mssql", port: "1433",  timezone: "-02:00" });
 
 // add all models to context (folder)
 fs
