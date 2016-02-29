@@ -23,10 +23,10 @@ app.use(bodyParser.json());
 // dynamically include routes (from Controllers)
 fs.readdirSync('./controllers').forEach(function (file) {
   if(file.substr(-3) == '.js') {
-      // var route = require('./controllers/' + file); // these 2 lines result the same as last one
+      // var route = require('./controllers/' + file); // these 2 lines result the same as uncommented one
       // route.controller(app);				
       require('./controllers/' + file).controller(app); 
-      /* passes then app instance to the controller 
+      /* passes the app instance to controller 
        (means controllers are imported, but don't have to be binded to a variable 
         since they're using app instance already)
        */
